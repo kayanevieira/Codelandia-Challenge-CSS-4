@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+
+
+.logo{
+    display: flex;
+    background-color: var(--white300);
+    width: 50%;
+    height: 100vh;
+}
+
+img{
+    margin: 0 auto;
+    width: 60%;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background-color: var(--bgSite);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+}
+
+.title-form{
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+}
+
+.input-selected{
+    height: 40px;
+    width: 25em;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid;
+    color: var(--input);
+    font-family: 'Lato', sans-serif;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text{
+    margin-left: 5em;
+    font-size: 15px;
+}
+
+.label-checkbox{
+    margin-left: 8px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+}
+
+button{
+    margin-top: 6px;
+    height: 3em;
+    width: 25em;
+    color: var(--white);
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+#google-icon{
+    height: 19px;
+    width: 20px;
+    margin-right: -60px;
+}
+
+#first-button{
+    background-color: var(--green);
+}
+
+#second-button{
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.p-text{
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px){
+    .logo{
+        display: none;
+    }
+
+    .container-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .container-form{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .input-selected{
+        width: 23.9em;
+    }
+
+    button{
+        width: 23.9em;
+    }
+}
